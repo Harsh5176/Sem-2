@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-size: 24px;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        background-color: lightblue;
+        padding: 10px;
+      }
+      .header,
+      .footer {
+        height: 10%;
+        width: 100%;
+        background-color: maroon;
+        color: white;
+      }
+      .f {
+        background-color: blue;
+        height: 10%;
+      }
+      .mainContent {
+        height: 83%;
+        width: 100%;
+        background-color: orange;
+        padding: 5px;
+      }
+      .leftDiv {
+        height: 42%;
+        width: 65%;
+        margin-right: 90px;
+        margin-left: 10px;
+        float: left;
+      }
+      .subDivl1 {
+        height: 20%;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: black;
+        color: white;
+      }
+      .subDivl2 {
+        height: 20%;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: black;
+        color: white;
+      }
+      .subDivl3 {
+        height: 20%;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: black;
+        color: white;
+      }
+      .rightDiv {
+        height: 30%;
+        width: 27%;
+        background-color: bisque;
+        margin-top: -140px;
+        float: right;
+      }
+      .subDivr1 {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <caption>
+        Page
+      </caption>
+      <div class="header">Header</div>
+      <div class="mainContent">
+        <div class="contentTag">Content</div>
+        <div class="leftDiv">
+          <div class="subDivl1">Entry</div>
+          <div class="subDivl2">Entry</div>
+          <div class="subDivl3">Entry</div>
+        </div>
+        <div class="rightDiv">
+          <div class="subDivr1">Sidebar</div>
+        </div>
+      </div>
+      <div class="footer f">@Darshan University, Rajkot</div>
+    </div>
+  </body>
+</html>

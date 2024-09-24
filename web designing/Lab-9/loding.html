@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loding...</title>
+
+    <style>
+
+        body{
+            height: 100vh;
+            position: relative;
+        }
+        .perent{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            color: aliceblue;
+            border-radius: 50%;
+            animation: loding 1s infinite;
+        }
+
+        @keyframes loding{
+            0%{
+                border-top:3px solid white;
+
+            }
+            25%{
+                border-right: 3px solid white;
+            }
+            50%{
+                border-bottom: 3px solid white;
+            }
+            75%{
+                border-left: 3px solid white;
+            }
+            /* 100%{
+                border-top: 3px solid white;
+            } */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="perent">
+        <div class="child"></div>
+        
+    </div>
+    
+</body>
+</html>

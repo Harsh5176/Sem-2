@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom animation</title>
+
+    <style>
+        body{
+            height: 100vh;
+           
+            position: relative;
+          
+        }
+
+        .mydiv{
+            
+    
+            /* border-top: 4px solid green;
+            border-bottom: 4px solid blue;  
+            border-left: 4px solid red;
+            border-right: 4px solid yellow; */
+            border-top: 3px solid black ;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        
+            animation: loding;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+        }
+        .div1{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes loding{
+            0%{
+                transform: rotate(0deg) ; 
+            }
+            25%{
+                transform: rotate(90deg) ; 
+            }
+            50%{
+                transform: rotate(180deg) ;
+            }
+            75%{
+                transform: rotate(270deg) ; 
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="div1">
+    <div class="mydiv"></div>
+    </div>
+
+</body>
+</html>

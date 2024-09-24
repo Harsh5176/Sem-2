@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneLayout</title>
+
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        border: 2px solid black;
+        padding: 10px;
+    }
+    .cantainor{
+        height: 100%;
+        width: 100%;
+        border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone{
+        height: 480px;
+        width: 320px ;
+        border: 2px solid red;
+        
+    }
+    .appname{
+        width: 100%;
+        height: 10%;
+        border: 2px solid green;
+        font-size: 2em;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .slider{
+        width: 100%;
+        height: 30%;
+        border: 4px solid rgb(12, 12, 12);
+        border-radius:6% ;
+        display: flex;
+        overflow-x: auto ;
+    }
+    .img-slider .slider-container {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: slider 26s infinite;
+}
+.img-slider .slider-container .slide {
+    position: relative;
+    width: 33.33333333%;
+    height: 100%;
+    float: left;
+    overflow: hidden
+}
+.img-slider .slider-container .slide img {
+  display: block;
+  width: 100%;
+  height: 100%
+}
+@keyframes slider {
+    0%, 25%, 100%{left: 0}
+    
+    30%, 55%{left: -100%}
+    
+    60%, 85%{left: -200%}
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="cantainor">
+
+        <div class="phone">
+
+            <div class="appname">appname</div>
+
+            <div class="img-slider">
+                <div class="slider-container">
+    
+                    <div class="slide">
+                      <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778218/img-26_aw9alb.jpg" height="100%" width="100%">
+                    </div>
+                    
+                    <div class="slide">
+                      <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778117/img-23_pumtse.jpg" height="100%" width="100%">
+                    </div>
+                
+                    <div class="slide">
+                      <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778109/img-20_ljchnk.jpg" height="100%" width="100%">
+                    </div>
+                    
+                  </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

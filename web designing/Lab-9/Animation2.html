@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        @keyframes moving{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+               left: 100px;
+            }
+            50%{
+                left: 100px;
+                top: 100px ;
+            }
+            75%{
+                top: 100px;
+                right: 100px;
+
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+
+        }
+            
+        .mydiv{
+            background-color: aqua;
+            border: 2px solid  black;
+            height: 20px;
+            width: 110px;
+            position: relative;
+            animation-direction: reverse;
+            animation-name: moving;
+            animation-duration: 5s;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="mydiv">Harsh Vekariya</div>
+
+</body>
+</html>
